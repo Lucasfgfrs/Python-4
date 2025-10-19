@@ -10,7 +10,6 @@ try:
        quantidade=int(input(f'{i+1} Qual é a quntidade do seu produto: '))
        print()
        preco=int(input(f'{i+1} Digite o preço do seu produto: '))
-       soma=+preco
        print()
        total_rendido= preco * quantidade
        produtos.append({
@@ -25,5 +24,6 @@ except ValueError:
     print()
 
 df=pd.DataFrame(produtos)
+
 
 print(df)
